@@ -53,8 +53,9 @@ bool Hybrid<T>::isEmpty()
 template < class T >
 void Hybrid<T>::enqueue(T* item)
 {
-   sldl -> add(item);
+  
    q -> enqueue(item);
+    sldl -> add(item);
   
   
 }
