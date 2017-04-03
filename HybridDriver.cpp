@@ -44,6 +44,7 @@ int main()
    Hybrid<CD>* h = new Hybrid<CD>(&CD::compare_items, &CD::compare_keys);
    addCDs(cds, h);
 
+ cout<<"This is the sorted list from the sorted double Linked List"<<endl; 
    ListDoublyLinkedIterator<CD>* iter = h->iterator();
    while(iter->hasNext())
    {
@@ -51,11 +52,13 @@ int main()
       cd->displayCD();
    }
    delete iter;
-
+cout<<"This is the FIFO list using the Queue"<<endl;
    while(!(h->isEmpty()))
    {
       CD* cd = h->dequeue();
+	  
       cd->displayCD();
+	 
    }
    delete h;
 
