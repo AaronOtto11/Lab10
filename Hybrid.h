@@ -10,6 +10,7 @@ class Hybrid
 {
 
    private:
+	//QueueLinked<T>* q;   Required for First Method
       QueueLinked<DoubleNode<T> >* q;
       SortedListDoublyLinked<T>* sldl;
 
